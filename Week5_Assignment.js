@@ -156,7 +156,7 @@ class Menu {
     deselectTraining() {
         let index = prompt('Enter the index of the training you wish to deselect:');
         if (index > -1 && index < this.selectedEmployee.trainings.length) {
-            this.selectedEmployee.trainings[index].selected = false;
+            this.selectedEmployee.trainings.splice(index, 1);
         }
     }
     
